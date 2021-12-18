@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="library.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">    
+    <title>Library</title>
+</head>
+<body>
+    <header> 
+        <div class = "title">My Library</div>
+    </header>
+    <div class = inputBook>
+        <div class = inputLine>
+            <label for="BookName"> Enter Book Name: </label>
+            <input type="text" id="BookName" placeholder="Book Name">
+        </div>
+        <div class = inputLine>
+            <label for="AuthorName"> Enter Book Author: </label>
+            <input type="text" id="AuthorName" placeholder="Book Author">
+        </div>
+        <div class = inputLine>
+            <label for="PageNumber">Enter Page Number: </label>
+            <input type = "number" id="PageNumber">
+        </div>
+        <div class = inputLine>
+            <label for="Read"> Have you read the book? </label>
+            <input type="checkbox" id="Read"> I have read it!  
+        </div>
+        <button type = "button" class="submit" id = "submit"> Submit </button>
+    </div>
+    <div id = "display">
+    </div>
+    <div id = "footer">
+        <label for = "totalbooks"> Total Books in Library: </label>
+        <div id = "totalbooks" class = "counter"></div>
+        <label for = "totalpages"> Total Pages Read: </label>
+        <div id = "totalpages" class = "counter"></div>
+        <label for = "booksread" >Total Books Read:
+        </label>
+        <div id = "booksread" class = "counter" ></div>
+    </div>
+</body>
+</html>
